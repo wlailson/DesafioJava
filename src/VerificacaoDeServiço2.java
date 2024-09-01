@@ -11,7 +11,6 @@ public class VerificacaoDeServiço2 {
         boolean movelContratado = false;
         boolean bandaLargaContratada = false;
         boolean tvContratada = false;
-    
         // TODO: Itere sobre os serviços contratados
         for (String servico : servicosContratados) {
             if (servico.equals("banda larga")){
@@ -22,7 +21,6 @@ public class VerificacaoDeServiço2 {
                 movelContratado = true; 
             }
         }
-
         // TODO: Verifique se todos os serviços foram contratados
         if (movelContratado && bandaLargaContratada && tvContratada) {
             return "Combo Completo";
@@ -30,7 +28,6 @@ public class VerificacaoDeServiço2 {
             return "Combo Incompleto";
         }
     }
-
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
